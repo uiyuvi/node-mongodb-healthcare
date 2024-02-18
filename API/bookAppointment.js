@@ -11,23 +11,26 @@ module.exports = function (req, res) {
 
    appointments.find({ fname: req.body.fname, lname: req.body.lname, AppointmentDate: req.body.AppointmentDate }, function (err, data) {
       console.log('inside find appointment', req.body.fname)
-      if (err) {
+      /* if (err) {
          console.log('error')
          return res.status(400).json({ error: err });
       }
       if (data && data.length > 0) {
          console.log('user with same appointment exist')
          return res.status(400).json({ error: "appointment already exists" });
-      }
-      const newAppointment = {
+      } */
+      const body = req.body;
+      const newAppointment = Object.assign({}, {_id: new mongoose.Types.ObjectId()},{body})
+      
+      /* const newAppointment = {
          _id: new mongoose.Types.ObjectId(),
          ...req.body
-      }
+      } */
       console.log('about to create appointment', newAppointment)
       appointments.create(newAppointment, function (error, createdData) {
-         if (error) {
+         /* if (error) {
             return res.status(400).json({ error: err });
-         }
+         } */
          return res.status(200).json({ status: "success" });
       })
    });

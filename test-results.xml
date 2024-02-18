@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="80.077" tests="9" failures="8">
+  <testsuite name="Root Suite" timestamp="2024-02-18T13:09:14" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Preparing to test API" timestamp="2024-02-18T13:09:14" tests="0" file="D:\gitworkspace\angular\wings2\healthcare_node\test\test.js" failures="0" time="0">
+  </testsuite>
+  <testsuite name="API testing started" timestamp="2024-02-18T13:09:14" tests="9" file="D:\gitworkspace\angular\wings2\healthcare_node\test\test.js" failures="8" time="80.077">
+    <testcase name="Preparing to test API API testing started it should test register API" time="10.005" classname="it should test register API">
+      <failure message="timeout of 10000ms exceeded. Ensure the done() callback is being called in this test." type="Error"><![CDATA[Error: timeout of 10000ms exceeded. Ensure the done() callback is being called in this test.
+    at Timeout.<anonymous> (D:\gitworkspace\angular\wings2\healthcare_node\node_modules\mocha\lib\runnable.js:226:19)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)]]></failure>
+    </testcase>
+    <testcase name="Preparing to test API API testing started it should test login API" time="10.008" classname="it should test login API">
+      <failure message="timeout of 10000ms exceeded. Ensure the done() callback is being called in this test." type="Error"><![CDATA[Error: timeout of 10000ms exceeded. Ensure the done() callback is being called in this test.
+    at Timeout.<anonymous> (D:\gitworkspace\angular\wings2\healthcare_node\node_modules\mocha\lib\runnable.js:226:19)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)]]></failure>
+    </testcase>
+    <testcase name="Preparing to test API API testing started it should test addPatient API" time="0.01" classname="it should test addPatient API">
+    </testcase>
+    <testcase name="Preparing to test API API testing started it should test editProfile API" time="10.005" classname="it should test editProfile API">
+      <failure message="timeout of 10000ms exceeded. Ensure the done() callback is being called in this test." type="Error"><![CDATA[Error: timeout of 10000ms exceeded. Ensure the done() callback is being called in this test.
+    at Timeout.<anonymous> (D:\gitworkspace\angular\wings2\healthcare_node\node_modules\mocha\lib\runnable.js:226:19)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)]]></failure>
+    </testcase>
+    <testcase name="Preparing to test API API testing started it should test fetchPatient API" time="10.011" classname="it should test fetchPatient API">
+      <failure message="timeout of 10000ms exceeded. Ensure the done() callback is being called in this test." type="Error"><![CDATA[Error: timeout of 10000ms exceeded. Ensure the done() callback is being called in this test.
+    at Timeout.<anonymous> (D:\gitworkspace\angular\wings2\healthcare_node\node_modules\mocha\lib\runnable.js:226:19)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)]]></failure>
+    </testcase>
+    <testcase name="Preparing to test API API testing started it should test diseases API" time="10.003" classname="it should test diseases API">
+      <failure message="timeout of 10000ms exceeded. Ensure the done() callback is being called in this test." type="Error"><![CDATA[Error: timeout of 10000ms exceeded. Ensure the done() callback is being called in this test.
+    at Timeout.<anonymous> (D:\gitworkspace\angular\wings2\healthcare_node\node_modules\mocha\lib\runnable.js:226:19)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)]]></failure>
+    </testcase>
+    <testcase name="Preparing to test API API testing started it should test bookAppointment API" time="10.013" classname="it should test bookAppointment API">
+      <failure message="timeout of 10000ms exceeded. Ensure the done() callback is being called in this test." type="Error"><![CDATA[Error: timeout of 10000ms exceeded. Ensure the done() callback is being called in this test.
+    at Timeout.<anonymous> (D:\gitworkspace\angular\wings2\healthcare_node\node_modules\mocha\lib\runnable.js:226:19)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)]]></failure>
+    </testcase>
+    <testcase name="Preparing to test API API testing started it should test fetchAppointment API" time="10.015" classname="it should test fetchAppointment API">
+      <failure message="timeout of 10000ms exceeded. Ensure the done() callback is being called in this test." type="Error"><![CDATA[Error: timeout of 10000ms exceeded. Ensure the done() callback is being called in this test.
+    at Timeout.<anonymous> (D:\gitworkspace\angular\wings2\healthcare_node\node_modules\mocha\lib\runnable.js:226:19)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)]]></failure>
+    </testcase>
+    <testcase name="Preparing to test API API testing started it should test singlePatientAppointments API" time="10.007" classname="it should test singlePatientAppointments API">
+      <failure message="timeout of 10000ms exceeded. Ensure the done() callback is being called in this test." type="Error"><![CDATA[Error: timeout of 10000ms exceeded. Ensure the done() callback is being called in this test.
+    at Timeout.<anonymous> (D:\gitworkspace\angular\wings2\healthcare_node\node_modules\mocha\lib\runnable.js:226:19)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,5 +1,4 @@
 module.exports ={
-  validToken:require('../APITest/validToken.js'),
   login:require('../APITest/login.js'),
   register:require('../APITest/register.js'),
   fetchUsers:require('../APITest/getUsers.js'),
