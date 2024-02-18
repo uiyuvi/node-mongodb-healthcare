@@ -8,6 +8,12 @@ const mongo = require('mongodb').MongoClient
 module.exports = async function (req, res) {
 
   /*write your code here*/
+  if (req.body.patientId) {
+    const appointmentFound = await appointments.findOne({ patientId: req.body.patientId });
+    console.log("single appointment", req.body.patientId, appointmentFound)
+    return res.status(200).json([appointmentFound]);
+  }
   const appointmentsFound = await appointments.find();
+  console.log("all appointments", appointmentsFound)
   res.status(200).json(appointmentsFound);
 }
