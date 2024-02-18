@@ -13,7 +13,7 @@ module.exports = async function (req, res) {
    console.log("login entry", req.body)
 
    try {
-      const attemptedUser = await user.findOne({ userName: req.body.uname, pwd: req.body.password });
+      const attemptedUser = await user.findOne({ userName: req.body.uname, pwd: req.body.pwd });
       console.log(attemptedUser, "attemptedUser")
       if (!attemptedUser || req.body.pwd !== attemptedUser.pwd) {
          return res.status(400).json({ error: 'Username or password is wrong' });
@@ -26,11 +26,12 @@ module.exports = async function (req, res) {
       const userWithoutPassword = (({ pwd, ...o }) => o)(attemptedUser)
       const loggedInUser = {
          token,
-         status: true,
+         uid: userWithoutPassword._id,
+         success: true,
          message: "Authentication successful!",
          ...userWithoutPassword
       };
-      console.log(loggedInUser);
+      console.log("loggedInUser", loggedInUser);
       res.json(loggedInUser);
    } catch (error) {
       console.error(error);
